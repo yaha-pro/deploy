@@ -17,30 +17,17 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
   </head>
 
-  # <body class="bg-gray-100 flex flex-col min-h-screen">
-  #   <header class="bg-blue-600 text-white p-4">
-  #     <div class="container mx-auto">
-  #       <h1 class="text-2xl font-bold">TODOアプリ</h1>
-  #     </div>
-  #   </header>
-  #   <main class="container mx-auto mt-8 flex-grow">
-  #     <%= yield %>
-  #   </main>
-  #   <footer class="bg-gray-800 text-white text-center p-4 mt-8">
-  #     <p>&copy; 2024 TODOアプリ. All Rights Reserved.</p>
-  #   </footer>
-  # </body>
   <body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="bg-blue-600 text-white p-4">
+      <div class="container mx-auto">
+        <h1 class="text-2xl font-bold">TODOアプリ</h1>
+      </div>
+    </header>
     <main class="container mx-auto mt-8 flex-grow">
-      <div class="bg-blue-50 p-6 rounded-lg shadow-lg">
-        <h1 class="text-3xl font-bold justify-center text-blue-500 mt-12 mr-24">57期・58期 デプロイ会</h1>
-      </div>
-      <div class="text-xl justify-center mt-6 mr-24">
-        <p>デプロイできました！</p>
-      </div>
-      <div class="flex justify-center">
-        <img src="/assets/images/E7355F85-B603-4B26-AB27-7E563946DFC3_1_105_c.jpeg" />
-      </div>
+      <%= yield %>
     </main>
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+      <p>&copy; 2024 TODOアプリ. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
