@@ -15,6 +15,7 @@
     <link rel="apple-touch-icon" href="/icon.png">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+    <script src="https://polyfill.io/v3/polyfill.min.js"></script>
   </head>
 
   <body class="bg-gray-100 flex flex-col min-h-screen">
@@ -26,8 +27,7 @@
     <main class="container mx-auto mt-8 flex-grow">
       <%= yield %>
     </main>
-    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
-      <p>&copy; 2024 TODOアプリ. All Rights Reserved.</p>
+    <footer>
     </footer>
   </body>
 </html>
